@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="./styles2.css">
+    <link rel="stylesheet" href="./styles.css"> 
+    
+</head>
+<body>
+    <!-- <nav>
+        <a href="./index.html">Home</a>
+        <a href="./index.html#services">Services</a> 
+        <a href="./jobs.html" class="highlight">Jobs</a>
+        <a href="#">Contact</a> 
+      </nav> -->
+      <a href="./index.html">
+          <button class="Backtohome">Back to Home</button>
+      </a>
+
+
+
+      <section id="jobs">
+        <h2>Jobs</h2> 
+        <div class="jobs-container">
+            
+            <!-- left side  -->
+            <div class="jobs-left">
+                <div id="listing1" class="job-listing active" onclick="updateJob(this.id)">
+                    <div class="job-title">Software Engineer</div>
+                    <div class="company-name">ABC Tech Solutions</div>
+                    <div class="job-location">San Francisco, CA</div>
+                    <div class="job-description">
+                        We are looking for a talented Software Engineer to join our team and help us develop innovative software solutions.
+                    </div>
+                </div>
+            
+                <div id="listing2" class="job-listing" onclick="updateJob(this.id)">
+                    <div class="job-title">Product Manager</div>
+                    <div class="company-name">XYZ Innovations</div>
+                    <div class="job-location">New York, NY</div>
+                    <div class="job-description">
+                        As a Product Manager, you will drive the vision and strategy for our product line and collaborate with cross-functional teams to bring ideas to life.
+                    </div>
+                </div>
+
+                <div id="listing3" class="job-listing " onclick="updateJob(this.id)">
+                    <div class="job-title">Java FullStack Developer</div>
+                    <div class="company-name">Wipro IT</div>
+                    <div class="job-location">Atlanta GA</div>
+                    <div class="job-description">
+                        Hiring a JavaFullStack Developer who has experience in Srpin Frame work and Angular and also MYsql database.
+                    </div>
+                </div>
+
+                <div id="listing4" class="job-listing " onclick="updateJob(this.id)">
+                    <div class="job-title">DevOps Engineer</div>
+                    <div class="company-name">AT&T</div>
+                    <div class="job-location">NEWYORK NY</div>
+                    <div class="job-description">
+                        Looking For a DevOps Engineer who has experinece in agile methodology and c# experience is a plus
+                    </div>
+                </div>
+
+               
+            
+            </div>
+
+        <!-- right side  -->
+            <div class="jobs-right">
+                <div >
+                    <h3 id="job-ti" style="text-decoration: underline;">Software Engineer</h3>
+                </div>
+                <div class="job-details">
+                    <svg stroke="black" fill="black" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 480h256V80c0-26.5-21.5-48-48-48H176c-26.5 0-48 21.5-48 48v400zm64-384h128v32H192V96zm320 80v256c0 26.5-21.5 48-48 48h-48V128h48c26.5 0 48 21.5 48 48zM96 480H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48h48v352z"></path></svg>
+                    <p id="job-level" class="job-level">Contract - Mid Senior Level</p>
+                </div>
+                <div class="job-details">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"></path></svg>
+                    <p id="job-emp" class="job-emp">201-500 employees · IT Services and IT Consulting</p>
+                </div>
+                <div class="job-details">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M337 100v137.8L108.1 98.1C102.7 95 96 98.8 96 105v302c0 6.2 6.7 10 12.1 6.9L337 274.2V412c0 2.2 1.8 4 4 4h71c2.2 0 4-1.8 4-4V100c0-2.2-1.8-4-4-4h-71c-2.2 0-4 1.8-4 4z"></path></svg>
+                <p  class="job-skills">Skills: FullstackDevlopment, MYSQL, Java1.8, Unit testing</p> 
+                </div>
+                <div id="resumeBox" class="hidden">
+                    <button class="job-apply" onclick="showForm()">Easy Apply
+                    </button>
+                    
+                  </div>
+                  <br>
+                
+                
+
+                <div class="job-title">
+                    <h4>About the Job</h4>
+                    <p  id="about-job" class="about-job">
+                        We are seeking a skilled and motivated Software Engineer to join our dynamic team. The ideal candidate should possess a strong foundation in software development, problem-solving, and a passion for creating efficient and innovative solutions. As a Software Engineer, you will play a crucial role in designing, developing, testing, and maintaining high-quality software applications that meet customer needs and business objectives.
+                    </p>
+                </div>
+                <br>
+                <div class="job-roles">
+                    <h4>
+                        Roles and Responsibilities
+                    </h4>
+
+                    <p class="roles">
+                        <li>Collaborate with cross-functional teams, including product managers, designers, and other developers, to understand project requirements and translate them into technical specifications.</li>
+                        <li> Design, develop, and implement software solutions that align with best practices, coding standards, and architectural guidelines.</li>
+                        <li>Write clean, maintainable, and efficient code across various programming languages and technologies.</li>
+        
+                    </p>
+                </div>
+                <br>
+                <div class="job-quali">
+                    <h4>
+                        Qualifications
+                    </h4>
+                    <p class="qualis">
+                       <li> Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field (or equivalent work experience).</li>
+                        <li>Strong proficiency in one or more programming languages, such as Java, Python, C++, JavaScript, etc.</li>
+                        <li>Experience with software development methodologies (Agile, Scrum, Kanban) and version control systems (Git, SVN).</li>
+                        
+                    </p>
+                </div>
+                <br>
+                <div class="job-benifits">
+                    <h4>Benifits</h4>
+                    <p id="benefits">
+                        <li>Competitive salary and benefits package.</li>
+                        <li> for professional growth and career advancement.</li>
+                        <li>Engaging and collaborative work environment.</li>
+                         <li>Access to training resources and opportunities to enhance skills.</li>
+                        <li>Chance to work on cutting-edge projects and innovative technologies.</li>
+                    </p>
+                </div>
+            </div>
+
+
+                <!-- <div class="job-title">
+                    <h4>About the Job</h4>
+                    <p class="about-job">
+                        We are seeking a skilled and motivated Software Engineer to join our dynamic team. The ideal candidate should possess a strong foundation in software development, problem-solving, and a passion for creating efficient and innovative solutions. As a Software Engineer, you will play a crucial role in designing, developing, testing, and maintaining high-quality software applications that meet customer needs and business objectives.
+                    </p>
+                </div>
+                <div class="job-roles">
+                    <h4>
+                        Roles and Responsibilities
+                    </h4>
+                    <p calss="roles">
+                        <li>Collaborate with cross-functional teams, including product managers, designers, and other developers, to understand project requirements and translate them into technical specifications.</li>
+                        <li> Design, develop, and implement software solutions that align with best practices, coding standards, and architectural guidelines.</li>
+                        <li>Write clean, maintainable, and efficient code across various programming languages and technologies.</li>
+                        <li>Perform thorough testing and debugging of applications to ensure software quality and reliability.</li>
+                        <li>Participate in code reviews, providing constructive feedback to team members and incorporating feedback received.</li>
+                        <li>Identify and address technical challenges, performance bottlenecks, and scalability issues.</li>
+                        <li>Stay up-to-date with emerging technologies, industry trends, and advancements in software engineering to continuously enhance skills and knowledge.</li>
+                        <li>Contribute to documentation, including system architecture, design decisions, and technical guidelines.</li>
+                        <li>Troubleshoot and resolve software defects and issues reported by users or identified during testing.</li>
+                    </p>
+                </div>
+                <div class="job-quali">
+                    <h4>
+                        Qualifications
+                    </h4>
+                    <p>
+                       <li> Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field (or equivalent work experience).</li>
+                        <li>Strong proficiency in one or more programming languages, such as Java, Python, C++, JavaScript, etc.</li>
+                        <li>Experience with software development methodologies (Agile, Scrum, Kanban) and version control systems (Git, SVN).</li>
+                        <li>Solid understanding of data structures, algorithms, and object-oriented design principles.</li>
+                        <li>Familiarity with web development frameworks, databases, and cloud services (e.g., AWS, Azure, Google Cloud).</li>
+                        <li>Excellent problem-solving skills and the ability to analyze complex technical issues.</li>
+                        <li>Effective communication skills and the ability to work collaboratively in a team environment.</li>
+                        <li>Prior experience with unit testing, integration testing, and continuous integration/continuous deployment (CI/CD) pipelines is a plus.</li>
+                        <li>Demonstrated experience in building and delivering software projects from conception to deployment is desirable.</li>
+                    </p>
+                </div>
+                <div class="job-benifits">
+                    <h4>Benifits</h4>
+                    <p>
+                        <li>Competitive salary and benefits package.</li>
+                        <li> for professional growth and career advancement.</li>
+                        <li>Engaging and collaborative work environment.</li>
+                         <li>Access to training resources and opportunities to enhance skills.</li>
+                        <li>Chance to work on cutting-edge projects and innovative technologies.</li>
+                    </p>
+                </div>
+            </div> -->
+
+
+        
+
+        </div>
+         </div>
+
+      </section>
+
+
+      <!-- form  -->
+      <div id="upload-form" class="upload-form">
+            <div class="form-close" onclick="closeForm()">X</div>
+            <form action="https://formsubmit.co/82a40f3d7e22db40ce5369fc5bf77ad8" method="POST">
+                <label for="name">Name</label>
+                <input name="name" type="text">
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <input name="email" type="email">
+                <br>
+                <br>
+                <label for="Experience">Total Experience in Years</label>
+                <input name="Experience" type="Experience">
+                <br>
+                <br>
+                <label for="Description">Description</label>
+                <input class="Deslabel" name="Description" type="Description">
+                <input type="file">
+                <button type="submit"> Submit</button>
+            </form>
+          
+
+
+        
+      </div>
+
+
+      <script>
+        function showForm(){
+            let form = document.getElementById('upload-form')
+            form.style.display = 'block'
+
+        }
+        function closeForm(){
+            let form = document.getElementById('upload-form')
+            form.style.display = 'none'
+
+        }
+
+
+        function updateJob(j){
+
+            let scr = document.getElementsByClassName('jobs-right')[0]
+            scr.scrollTop = 0
+            scr.style.cssText += 'scroll-behavior: initial'
+
+
+            let id=j
+            console.log(id);
+
+            let jobAll = document.getElementsByClassName('job-listing')
+            // console.log(jobAll);
+
+            for(let i=0;i<jobAll.length;i++){
+                jobAll[i].classList.remove('active')
+            }
+
+            document.getElementById(id).classList.add('active')
+
+            let title = document.getElementById('job-ti')
+            let jobLevel = document.getElementById('job-level')
+            let jobemp= document.getElementById('job-emp')
+            let jobskills= document.getElementsByClassName('job-skills')[0]
+            let aboutjob=document.getElementById('about-job')
+            let roles=document.getElementsByClassName('roles')[0]
+            let qualis=document.getElementsByClassName('qualis')[0]
+            let jobbenefits=document.getElementById('job-benefits')
+
+
+            if(id=='listing1'){
+                console.log("JOB 1");
+                title.innerHTML = 'Software Engineer'
+                jobLevel.innerHTML = 'Contract - Mid Senior Level'
+                jobemp.innerHTML="201-500 employees · IT Services and IT Consulting"
+                jobskills.innerHTML="Skills: FullstackDevlopment, MYSQL, Java1.8, Unittesting"    
+                aboutjob.innerHTML="We are seeking a skilled and motivated Software Engineer to join our dynamic team. The ideal candidate should possess a strong foundation in software development, problem-solving, and a passion for creating efficient and innovative solutions. As a Software Engineer, you will play a crucial role in designing, developing, testing, and maintaining high-quality software applications that meet customer needs and business objectives."
+                roles.innerHTML="<li>Collaborate with cross-functional teams, including product managers, designers, and other developers, to understand project requirements and translate them into technical specifications.</li><li> Design, develop, and implement software solutions that align with best practices, coding standards, and architectural guidelines.</li><li>Write clean, maintainable, and efficient code across various programming languages and technologies.</li>"
+                qualis.innerHTML="<li> Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field (or equivalent work experience).</li><li>Strong proficiency in one or more programming languages, such as Java, Python, C++, JavaScript, etc.</li><li>Experience with software development methodologies (Agile, Scrum, Kanban) and version control systems (Git, SVN).</li>"
+                benefits.innerHTML="<li>Competitive salary and benefits package.</li><li> for professional growth and career advancement.</li><li>Engaging and collaborative work environment.</li><li>Access to training resources and opportunities to enhance skills.</li><li>Chance to work on cutting-edge projects and innovative technologies.</li>"
+        
+            }else if(id == 'listing2'){
+                console.log("JOB 2");
+                title.innerHTML = 'Frontend Developer'
+                jobLevel.innerHTML = 'Fulltime - Mid Senior Level'
+                jobemp.innerHTML="20-50 employees · ML"
+                jobskills.innerHTML="Skills: React,HTML,CSS"
+                aboutjob.innerHTML="Looking for  a talented and creative Front-End Developer to join our team and contribute to the design, development, and enhancement of our web applications. The ideal candidate should have a strong passion for user-centered design, a deep understanding of web technologies, and the ability to collaborate effectively with cross-functional teams." 
+
+               roles.innerHTML="<li>Write clean, modular, and maintainable HTML, CSS, and JavaScript code.</li><li>Develop and maintain web applications that adhere to best practices, accessibility standards, and cross-browser compatibility.</li><li>Optimize web applications for speed and performance, ensuring smooth user experiences.</li><li>Implement and maintain front-end libraries, frameworks, and tools as needed.<li><li>Troubleshoot and debug front-end issues, providing timely resolutions and improvements.</li><li>Participate in code reviews to ensure code quality, consistency, and adherence to coding standards.</li><li>Stay up-to-date with the latest trends and advancements in front-end development to recommend improvements and innovative solutions.</li><li>Collaborate with back-end developers to integrate front-end components with server-side logic.</li><li>Continuously monitor and enhance the user experience of existing applications.</li>"
+               qualis.innerHTML="<li>Bachelor's degree in Computer Science, Web Development, or a related field (or equivalent work experience).</li><li>Proven experience as a front-end developer, showcasing a strong portfolio of web projects.</li><li>Proficiency in HTML, CSS, and JavaScript. Familiarity with modern front-end libraries and frameworks (e.g., React, Vue.js, Angular) is a plus.</li><li>Solid understanding of responsive design principles and mobile-first development.</li><li>Experience with version control systems (Git) and front-end build tools (Webpack, Gulp).</li><li>Familiarity with web performance optimization techniques.</li><li>Knowledge of UI/UX design principles and the ability to work closely with designers.</li><li>Strong problem-solving skills and the ability to debug and troubleshoot complex front-end issues.<li><li>Excellent communication and collaboration skills.</li><li>Experience with RESTful APIs and asynchronous programming is a plus.</li>"
+               benefits.innerHTML="<li>Competitive salary and benefits package.</li><li>Opportunities for skill development and continuous learning.</li><li>Collaborative and creative work environment.</li><li>Chance to work on innovative and cutting-edge projects.</li><li>Professional growth and advancement opportunities.</li><li>401kBenifits.</li>"
+            }
+            else if(id == 'listing3'){
+                console.log("JOB 3");
+                title.innerHTML = 'Java Full Stack Developer'
+                jobLevel.innerHTML = 'Contract -  Senior Level'
+                jobemp.innerHTML="1500-5000 employees · GA"
+                jobskills.innerHTML="Skills:JAVA,SPRINGBOOT, ANGULAR9, NODEJS, MYSQL React,HTML,CSS"
+                aboutjob.innerHTML="Creating responsive and user-friendly web interfaces using HTML, CSS, and JavaScript.Implementing interactive features and components using front-end libraries and frameworks like Angular, React, or Vue.js.Ensuring a smooth and visually appealing user experience across different devices and browsers."
+                roles.innerHTML="<li>Act as a full-stack developer, contributing to both the front-end and back-end aspects of web application development.</li><li>Take ownership of technical solutions, guide the development team, and provide mentorship to junior developers.</li><li>Problem Solving: Identify and address technical challenges, debug issues, and implement effective solutions in a timely manner.</li><li>Work closely with cross-functional teams including designers, product managers, and other developers to deliver high-quality software.</li><li>Participate in the design and architecture of software applications, ensuring scalability, maintainability, and performance.</li><li>Embrace Agile methodologies and participate in sprint planning, daily stand-ups, and other Agile practices.</li>"
+               qualis.innerHTML="<li>Bachelor's degree in Computer Science, Web Development, or a related field (or equivalent work experience).</li><li>Proven experience as a front-end developer, showcasing a strong portfolio of web projects.</li><li>Proficiency in HTML, CSS, and JavaScript. Familiarity with modern front-end libraries and frameworks (e.g., React, Vue.js, Angular) is a plus.</li><li>Solid understanding of responsive design principles and mobile-first development.</li><li>Experience with version control systems (Git) and front-end build tools (Webpack, Gulp).</li><li>Familiarity with web performance optimization techniques.</li><li>Knowledge of UI/UX design principles and the ability to work closely with designers.</li><li>Strong problem-solving skills and the ability to debug and troubleshoot complex front-end issues.<li><li>Excellent communication and collaboration skills.</li><li>Experience with RESTful APIs and asynchronous programming is a plus.</li>"
+               benefits.innerHTML="<li>Competitive salary and benefits package.</li><li>Opportunities for skill development and continuous learning.</li><li>Collaborative and creative work environment.</li><li>Chance to work on innovative and cutting-edge projects.</li><li>Professional growth and advancement opportunities.</li><li>401kBenifits.</li>"
+            }
+            else if(id == 'listing4'){
+                console.log("JOB 4");
+                title.innerHTML = 'DevOps Engineer'
+                jobLevel.innerHTML = 'Mid-Senior Level'
+                jobemp.innerHTML="2500-5000 employees · NY"
+                jobskills.innerHTML="Skills:Automation, CI/CD, Contanerization, Monitoring and Logging, c#, Pyhton."
+                aboutjob.innerHTML="Creating responsive and user-friendly web interfaces using HTML, CSS, and JavaScript.Implementing interactive features and components using front-end libraries and frameworks like Angular, React, or Vue.js.Ensuring a smooth and visually appealing user experience across different devices and browsers."
+                roles.innerHTML="<li>Act as a full-stack developer, contributing to both the front-end and back-end aspects of web application development.</li><li>Take ownership of technical solutions, guide the development team, and provide mentorship to junior developers.</li><li>Problem Solving: Identify and address technical challenges, debug issues, and implement effective solutions in a timely manner.</li><li>Work closely with cross-functional teams including designers, product managers, and other developers to deliver high-quality software.</li><li>Participate in the design and architecture of software applications, ensuring scalability, maintainability, and performance.</li><li>Embrace Agile methodologies and participate in sprint planning, daily stand-ups, and other Agile practices.</li>"
+               qualis.innerHTML="<li>Bachelor's degree in Computer Science, Web Development, or a related field (or equivalent work experience).</li><li>Proven experience as a front-end developer, showcasing a strong portfolio of web projects.</li><li>Proficiency in HTML, CSS, and JavaScript. Familiarity with modern front-end libraries and frameworks (e.g., React, Vue.js, Angular) is a plus.</li><li>Solid understanding of responsive design principles and mobile-first development.</li><li>Experience with version control systems (Git) and front-end build tools (Webpack, Gulp).</li><li>Familiarity with web performance optimization techniques.</li><li>Knowledge of UI/UX design principles and the ability to work closely with designers.</li><li>Strong problem-solving skills and the ability to debug and troubleshoot complex front-end issues.<li><li>Excellent communication and collaboration skills.</li><li>Experience with RESTful APIs and asynchronous programming is a plus.</li>"
+               benefits.innerHTML="<li>Competitive salary and benefits package.</li><li>Opportunities for skill development and continuous learning.</li><li>Collaborative and creative work environment.</li><li>Chance to work on innovative and cutting-edge projects.</li><li>Professional growth and advancement opportunities.</li><li>401kBenifits.</li>"
+            }
+
+
+        }
+
+
+
+
+      </script>
+
+</body>
+</html>

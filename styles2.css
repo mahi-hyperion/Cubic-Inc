@@ -1,0 +1,147 @@
+:root{
+    --primary: #004F87;
+    --text: white;
+}
+
+.highlight{
+    color: #ff6600; /* Change this to your desired highlight color */
+border-bottom: 2px solid #ff6600; /* Add a bottom border to the highlighted heading */
+padding-bottom: 5px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#jobs{
+    background-color: var(--primary);
+    color: white;
+    padding: 0;
+    padding-top:50px;
+}
+
+#jobs h2{
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.jobs-container{
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    gap: 10px;
+    color: black;
+    /* background-color: yellow; */
+}
+
+.jobs-left, .jobs-right{
+     overflow-y: scroll; 
+    width: 50%;
+}
+
+
+.jobs-right{
+    padding: 20px;
+    background-color: lightgray;
+}
+.job-listing {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.job-listing.active{
+    background-color: lightblue;
+}
+
+
+
+/* .job-listing2 {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+
+
+.job-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+
+.job-location {
+    color: #888;
+}
+
+
+.job-description {
+    margin-top: 10px;
+}
+
+
+.job-details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+
+
+
+
+.job-apply{
+    background-color: var(--primary);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.upload-form{
+    width: 450px;
+    height: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color:var(--primary);
+    padding: 20px;
+    display: none;
+    color: white;
+}
+
+.form-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.Deslabel{
+   width:100%;
+   height: 20vh; 
+}
+.Backtohome{
+    padding: 10px;
+    background-color: white;
+    color:black;
+    position: fixed;
+    top:20px;
+    right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
